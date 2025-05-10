@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.450,=C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.246,C:\Users\motya\OneDrive\Рабочий стол\КР\Unit2.h=C:\Users\motya\OneDrive\Рабочий стол\КР\MyUnit.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.390,=C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.876,C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Unit2.cpp=C:\Users\motya\OneDrive\Рабочий стол\КР\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.876,C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Unit2.dfm=C:\Users\motya\OneDrive\Рабочий стол\КР\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.896,C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\TrafficFlow.cbproj=C:\Users\motya\OneDrive\Рабочий стол\КР\TrafficFlow.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.032,C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Project2.cbproj=C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\TrafficFlow.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.876,C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Unit2.h=C:\Users\motya\OneDrive\Рабочий стол\КР\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.246,C:\Users\motya\OneDrive\Рабочий стол\КР\Unit2.dfm=C:\Users\motya\OneDrive\Рабочий стол\КР\MyUnit.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.775,=C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.786,C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\TrafficFlowPCH1.h=C:\Users\motya\OneDrive\Рабочий стол\КР\TrafficFlowPCH2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.669,=C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Project2PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.012,C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\Project2PCH1.h=C:\Users\motya\OneDrive\Документы\Embarcadero\Studio\Projects\TrafficFlowPCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.246,C:\Users\motya\OneDrive\Рабочий стол\КР\Unit2.cpp=C:\Users\motya\OneDrive\Рабочий стол\КР\MyUnit.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

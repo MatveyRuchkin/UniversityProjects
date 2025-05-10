@@ -1,0 +1,116 @@
+//---------------------------------------------------------------------------
+#ifndef MyUnitH
+#define MyUnitH
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ToolWin.hpp>
+#include <Vcl.Menus.hpp>
+#include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Grids.hpp>
+#include <VCLTee.Chart.hpp>
+#include <VclTee.TeeGDIPlus.hpp>
+#include <VCLTee.TeEngine.hpp>
+#include <VCLTee.TeeProcs.hpp>
+#include <VCLTee.Series.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <System.ImageList.hpp>
+#include <Vcl.ImgList.hpp>
+#include <Vcl.Imaging.pngimage.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu;
+	TMenuItem *FileMenu;
+	TPanel *Top;
+	TPanel *TablePanel;
+	TLabel *TableName;
+	TPanel *GraphPanel;
+	TStringGrid *Table;
+	TChart *Chart1;
+	TSplitter *SplitterGT;
+	TPanel *TopLeft;
+	TPanel *TopRight;
+	TEdit *EditT0;
+	TLabel *LabelT0;
+	TLabel *LabelTmax;
+	TEdit *EditTmax;
+	TLabel *LabelDeltaT;
+	TEdit *EditDeltaT;
+	TMenuItem *Open;
+	TMenuItem *SaveAs;
+	TSaveDialog *SaveDialog;
+	TOpenDialog *OpenDialog;
+	TStatusBar *StatusBar1;
+	TMenuItem *Save;
+	TStringGrid *InitialTable;
+	TMenuItem *FileCreate;
+	TMenuItem *Split;
+	TMenuItem *Exit;
+	TMenuItem *EditMenu;
+	TMenuItem *ResultMenu;
+	TMenuItem *AddRowMenu;
+	TMenuItem *CalcMenuButton;
+	TMenuItem *SaveTable;
+	TMenuItem *SaveGraph;
+	TGroupBox *GroupBox;
+	TButton *CalcButton;
+	TButton *AddRowButton;
+	TButton *DelRowButton;
+	TImageList *ImageList;
+	TSaveDialog *SaveTableDialog;
+	TSaveDialog *SaveGraphDialog;
+	TMenuItem *DelRowMenu;
+	TCheckBox *CheckBox1;
+	void __fastcall CalcButtonClick(TObject *Sender);
+	void __fastcall SaveAsClick(TObject *Sender);
+	void __fastcall OpenClick(TObject *Sender);
+	void __fastcall SaveClick(TObject *Sender);
+	void __fastcall AddRowButtonClick(TObject *Sender);
+	void __fastcall ValidateKeyPress_TEdit(TObject *Sender, System::WideChar &Key);
+	void __fastcall ValidateOnChange_TEdit(TObject *Sender);
+	void __fastcall ValidateKeyPress_Table(TObject *Sender, System::WideChar &Key);
+	void __fastcall ValidateOnChange_Table(TObject *Sender, System::LongInt ACol, System::LongInt ARow,
+		  const UnicodeString Value);
+	void __fastcall FileCreateClick(TObject *Sender);
+	void __fastcall FormCloseQuery(TObject *Sender, bool &CanClose);
+	void __fastcall TableDrawCell(TObject *Sender, System::LongInt ACol, System::LongInt ARow,
+		  TRect &Rect, TGridDrawState State);
+	void __fastcall DelRowButtonClick(TObject *Sender);
+	void __fastcall SaveTableClick(TObject *Sender);
+	void __fastcall SaveGraphClick(TObject *Sender);
+	void __fastcall CalcMenuButtonClick(TObject *Sender);
+	void __fastcall TableKeyDown(TObject *Sender, WORD &Key, TShiftState Shift);
+	void __fastcall TableMouseWheelUp(TObject *Sender, TShiftState Shift, TPoint &MousePos,
+          bool &Handled);
+	void __fastcall TableMouseWheelDown(TObject *Sender, TShiftState Shift, TPoint &MousePos,
+		  bool &Handled);
+	void __fastcall CheckBox1Click(TObject *Sender);
+	void __fastcall InitialTableKeyDown(TObject *Sender, WORD &Key, TShiftState Shift);
+	void __fastcall DelRowMenuClick(TObject *Sender);
+	void __fastcall AddRowMenuClick(TObject *Sender);
+	void __fastcall InitialTableDblClick(TObject *Sender);
+
+
+
+private:	// User declarations
+	String FileName;
+	bool __fastcall saveData(bool showDialog);
+	bool __fastcall CheckChangesAndSave();
+	void __fastcall InitialData(const String& fileName);
+	void __fastcall CalcButtonFunc(TObject *Sender);
+	void __fastcall ValidateInputData();
+	void __fastcall DelRow();
+	void __fastcall AddRow();
+    int __fastcall CalGridColWidth(TStringGrid* Grid,int Col);
+public:
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif
